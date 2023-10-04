@@ -45,7 +45,7 @@ const Pagination = () => {
   };
 
   return (
-    <div className='flex justify-end m-4 p-3 w-[98%] bg-[#E6E6FF] shadow-lg shadow-gray-500/50 rounded-lg  bottom-0 z-50'>
+    <div className='flex fixed bottom-0 justify-end m-4 p-3 w-[98%] bg-[#E6E6FF] shadow-lg shadow-gray-500/50 rounded-lg z-50'>
       <button
         className="px-2 py-1 bg-white rounded-xl m-1"
         onClick={handlePrevPage}

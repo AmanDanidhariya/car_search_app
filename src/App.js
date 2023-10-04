@@ -11,7 +11,6 @@ function App() {
               <Route path='/Relevance'></Route>
               <Route path='/Brands'></Route>
             </Route>
-            <Route path="page/:page" element="resultpage"></Route>
         </Routes>
     </BrowserRouter>
     </>

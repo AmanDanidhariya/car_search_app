@@ -1,21 +1,16 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {setSearchQuery} from "../slices/carSlice"
+import { setSearchQuery } from "../slices/carSlice";
 
 const Search = () => {
-
   const dispatch = useDispatch();
   //get query value from store
-  const searchQuery = useSelector((state)=>state.car.searchQuery);
+  const searchQuery = useSelector((state) => state.car.searchQuery);
 
-  
   //for getting search value
-  const handleSearchChange=(e)=>{
-    dispatch(setSearchQuery(e.target.value))
-  }
- 
-
-
+  const handleSearchChange = (e) => {
+    dispatch(setSearchQuery(e.target.value));
+  };
 
   return (
     <div>
