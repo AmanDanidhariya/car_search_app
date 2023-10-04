@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center m-4 p-3 w-[98%] shadow-lg shadow-gray-500/50 rounded-lg'>
     <Search/>
-    {NavItem.map((nav ,i)=><NavLink to={nav} key={i} className="mx-4 flex leading-3">{nav}<BiChevronDown/></NavLink>)}
+    {NavItem.map((nav ,i)=><NavLink to={nav} key={i} className="mx-4 flex items-center leading-2">{nav}<BiChevronDown size={20}/></NavLink>)}
    </div>
     
   )

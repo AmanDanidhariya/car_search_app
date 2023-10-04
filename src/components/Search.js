@@ -13,6 +13,7 @@ const Search = () => {
   const handleSearchChange=(e)=>{
     dispatch(setSearchQuery(e.target.value))
   }
+ 
 
 
 

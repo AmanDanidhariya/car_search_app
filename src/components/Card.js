@@ -1,22 +1,38 @@
-import React from "react";
-import data from "../assets/carData";
+import React, { useEffect } from "react";
 import { BsSpeedometer2 } from "react-icons/bs";
 import { PiSteeringWheelDuotone } from "react-icons/pi";
 import { AiOutlineHeart } from "react-icons/ai";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import {setError} from "../slices/carSlice" 
 
 const Card = () => {
+  const dispatch= useDispatch();
   //read state from store
   const carData = useSelector((state) => state.car.carData);
   const searchQuery = useSelector((state) => state.car.searchQuery);
+  const error = useSelector((state)=>state.car.error);
 
+  //for filter data according to query
   const filteredCars = carData.filter((car) =>
     car.carName.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+    //find carName
+    const findCar = carData.find((car)=> car.carName === carData.carName);
+
+    useEffect(()=>{
+      if(!findCar && filteredCars.length === 0){
+        dispatch(setError("car is not found"))
+      }else{
+        dispatch(setError(null));
+      }
+    },[findCar, dispatch, filteredCars])
+  
+
   return (
     <>
       <section className="flex justify-center flex-wrap">
+      <p className="text-red-500 text-3xl font-bold">{error}</p>
         {searchQuery.length > 0 ? (
           <>
             {filteredCars.map((car, i) => {

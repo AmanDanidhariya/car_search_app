@@ -5,7 +5,9 @@ const carSlice=createSlice({
     name:"car",
     initialState:{
         carData:data,//initial state for cara data
-        searchQuery: "",
+        searchQuery: "", 
+        error: null,
+
     },
     reducers:{
         setCarData: (state, action)=>{
@@ -13,9 +15,12 @@ const carSlice=createSlice({
         },
         setSearchQuery:(state, action)=>{
             state.searchQuery = action.payload;
+        },
+        setError:(state, action)=>{
+            state.error = action.payload;
         }
     },
 });
 
-export const {setCarData, setSearchQuery} = carSlice.actions;
+export const {setCarData, setSearchQuery, setError} = carSlice.actions;
 export default carSlice.reducer;
