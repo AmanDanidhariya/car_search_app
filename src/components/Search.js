@@ -9,11 +9,12 @@ const Search = () => {
   const searchQuery = useSelector((state)=>state.car.searchQuery);
 
   
-
+  //for getting search value
   const handleSearchChange=(e)=>{
     dispatch(setSearchQuery(e.target.value))
   }
-  console.log(searchQuery);
+
+
 
   return (
     <div>
