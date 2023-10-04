@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Search = () => {
   const [query, setQuery] = useState("");
-  
+
   console.log(query)
   return (
     <div>
@@ -10,10 +10,10 @@ const Search = () => {
         <div>
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search..."
             value={query}
             onChange={(e)=>setQuery(e.target.value)}
-            className="border-4  bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+            className="border-4 bg-white h-10 px-5  py-4 rounded-full text-sm focus:outline-none"
           />
         </div>
       </form>
