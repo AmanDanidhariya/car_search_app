@@ -263,6 +263,134 @@ const carData = [
     description:
       " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
   },
+  //another
+  {
+    id: 9151,
+    brand: "Tesla",
+    rating: 112,
+    carName: "Tesla Malibu",
+    imgUrl: img01,
+    model: "Model 3",
+    price: 500,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 2232,
+    brand: "Toyota",
+    rating: 102,
+    carName: "Toyota Aventador",
+    imgUrl: img02,
+    model: "Model-2022",
+    price: 500,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 3367,
+    brand: "BMW",
+    rating: 132,
+    carName: "BMW X3",
+    imgUrl: img03,
+    model: "Model-2022",
+    price: 650,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 4445,
+    brand: "Nissan",
+    rating: 102,
+    carName: "Nissan Mercielago",
+    imgUrl: img04,
+    model: "Model-2022",
+    price: 700,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 5521,
+    brand: "Ferrari",
+    rating: 94,
+    carName: "Ferrari Camry",
+    imgUrl: img05,
+    model: "Model-2022",
+    price: 450,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 6609,
+    brand: "Mercedes",
+    rating: 119,
+    carName: "Mercedes Benz XC90",
+    imgUrl: img06,
+    model: "Model-2022",
+    price: 850,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 7756,
+    brand: "Audi",
+    rating: 82,
+    carName: "Audi Fiesta",
+    imgUrl: img07,
+    model: "Model 3",
+    price: 500,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
+
+  {
+    id: 8813,
+    brand: "Colorado",
+    rating: 52,
+    carName: "Rolls Royce Colorado",
+    imgUrl: img08,
+    model: "Model 3",
+    price: 500,
+    speed: "20km",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Automatic",
+    description:
+      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+  },
 ];
 
 export default carData;

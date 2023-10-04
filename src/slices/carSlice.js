@@ -7,6 +7,8 @@ const carSlice=createSlice({
         carData:data,//initial state for cara data
         searchQuery: "", 
         error: null,
+        currentPage: 1,//current page
+        itemsPerPage:6,//Items per page
 
     },
     reducers:{
@@ -18,9 +20,21 @@ const carSlice=createSlice({
         },
         setError:(state, action)=>{
             state.error = action.payload;
+        },
+        nextPage:(state)=>{
+            state.currentPage +=1;
+        },
+        prevPage:(state)=>{
+            if(state.currentPage > 1){
+                state.currentPage -=1;
+            }
+        },
+        goToPage:(state, action)=>{
+            state.currentPage= action.payload;
         }
+        
     },
 });
 
-export const {setCarData, setSearchQuery, setError} = carSlice.actions;
+export const {setCarData, setSearchQuery, setError, nextPage, prevPage, goToPage} = carSlice.actions;
 export default carSlice.reducer;
