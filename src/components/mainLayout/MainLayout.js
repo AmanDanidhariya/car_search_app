@@ -1,14 +1,16 @@
 import React from 'react'
-import Search from '../Search'
 import Navbar from '../Navbar/Navbar'
 import { Outlet } from 'react-router-dom'
+import CardLayout from '../CardLayout/CardLayout';
 
 const MainLayout = () => {
+
   return (
     <>
-    <div >
+    <div className='w-full '>
         <Navbar/>
-        <Outlet/>
+        <Outlet/> 
+        <CardLayout/>
     </div>
     </>
   )
